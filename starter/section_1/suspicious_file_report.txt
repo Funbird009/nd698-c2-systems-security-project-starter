@@ -1,8 +1,18 @@
 # provide the additional filename that you have identified as a potentially suspicious file. Also provide details about the Command and control Domain which is hardcoded inside this file. 
 
 # Filename
+darklord   darklord.sh: 7758 (remote shell excutable file)
+remotesec  remotesec: 56565 (remote shell command)
 
+SSH-one     SSH-one ((remote shell excutable))
+rc.local 
+examples.desktop. suspicipious directory 
+notes.txt
+darklord.txt    empty
 
 # Callout domain
-
+check the screenshot on section 1 to see the commands used to access these directories
+/tmp/
+/etc/
+/bin/ 
  
