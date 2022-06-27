@@ -1,3 +1,18 @@
 #report all the detected filenames and the malware names identified by ClamAV.
 
 Filename		Detection name 
+
+ft32           Unix.Malware.Agent-6774375
+
+Ft64 			Unix.Malware.Agent-6774336
+
+Wipefs 			Unix.Tool.Miner-6443173
+darklord   darklord.sh: 7758 (remote shell excutable file)
+remotesec  remotesec: 56565 (remote shell command)
+
+SSH-one     SSH-one ((remote shell excutable))
+rc.local 
+examples.desktop. suspicipious directory 
+notes.txt
+darklord.txt    empty
+Check the  clamAV_rport.png to see the screenshots of section 1
