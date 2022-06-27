@@ -5,8 +5,8 @@ darklord   darklord.sh: 7758 (remote shell excutable file)
 remotesec  remotesec: 56565 (remote shell command)
 
 SSH-one     SSH-one ((remote shell excutable))
-rc.local 
-examples.desktop. suspicipious directory 
+rc.local     excutable file on SSH-one and SSH-T for multiple-users
+examples.desktop. suspicipious directory (lists of names of Desktop entry)
 notes.txt
 darklord.txt    empty
 
