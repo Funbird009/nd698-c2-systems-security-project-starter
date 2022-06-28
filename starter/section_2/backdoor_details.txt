@@ -1,12 +1,30 @@
 # Provide the backdoor entries created by the nation state attackers. 
 
 # Rouge Username
+      User passwd found on /etc/passwd/:
+
+      sshd:x:116:65534::/var/run/sshd:/usr/sbin/nologin
+
+      darklord:x:1001:1001:,,,:/home/darklord:/bin/bash
+      voldemort:x:0:0::/home/voldemort:
+      rtkit:x:107:114:RealtimeKit,,,:/proc:/bin/false
 
 
 # Backdoor process name
+      USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND:
+      root       966  0.0  0.0   2592   316 ?        SN   10:20   0:00 /tmp/remotesec -k -l 56565
+
+      rtkit     1659  0.0  0.0  21364  1208 ?        SNl  10:20   0:00 /usr/lib/rtkit/rtkit-daemon
+
+      colord    1967  0.0  0.1  37564  7648 ?        Sl   10:20   0:00 /usr/lib/colord/colord
+
+      nobody    1023  0.0  0.0   5552  1420 ?        S    10:20   0:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-
+
+      whoopsie   968  0.0  0.2  61212  8856 ?        Ssl  10:20   0:00 whoopsie
+
+      kernoops  2474  0.0  0.0   6388   952 ?        Ss   10:20   0:00 /usr/sbin/kerneloops
 
 
 # Backdoor port number the above process is listening on
 
-
-
+58322, 58316, 22 and 80
