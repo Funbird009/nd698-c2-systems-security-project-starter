@@ -1,0 +1,24 @@
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      1002/mysqld     
+tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      978/dnsmasq     
+tcp        0      0 0.0.0.0:56565           0.0.0.0:*               LISTEN      928/remotesec   
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      899/sshd        
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      2687/cupsd      
+tcp        0      0 127.0.0.1:5432          0.0.0.0:*               LISTEN      2158/postgres   
+tcp6       0      0 :::80                   :::*                    LISTEN      2557/apache2    
+tcp6       0      0 :::22                   :::*                    LISTEN      899/sshd        
+tcp6       0      0 ::1:631                 :::*                    LISTEN      2687/cupsd      
+udp        0      0 127.0.1.1:53            0.0.0.0:*                           978/dnsmasq     
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           797/dhclient    
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           795/dhclient    
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           793/dhclient    
+udp        0      0 0.0.0.0:631             0.0.0.0:*                           966/cups-browsed
+udp        0      0 0.0.0.0:41639           0.0.0.0:*                           440/avahi-daemon: r
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           440/avahi-daemon: r
+udp        0      0 0.0.0.0:23928           0.0.0.0:*                           793/dhclient    
+udp        0      0 0.0.0.0:41869           0.0.0.0:*                           797/dhclient    
+udp        0      0 0.0.0.0:24004           0.0.0.0:*                           795/dhclient    
+udp6       0      0 :::34368                :::*                                440/avahi-daemon: r
+udp6       0      0 :::5353                 :::*                                440/avahi-daemon: r
+udp6       0      0 :::41869                :::*                                795/dhclient    
+udp6       0      0 :::24004                :::*                                793/dhclient    
+udp6       0      0 :::11247                :::*                                797/dhclient 
