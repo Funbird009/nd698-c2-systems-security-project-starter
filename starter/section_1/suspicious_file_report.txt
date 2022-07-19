@@ -8,7 +8,8 @@ SSH-one     SSH-one ((remote shell excutable))
 rc.local     excutable file on SSH-one and SSH-T for multiple-users
 examples.desktop. suspicipious directory (lists of names of Desktop entry)
 notes.txt
-darklord.txt    empty
+http://darkl0rd.com:7758/SSH-T
+http://darkl0rd.com:7758/SSH-One
 
 # Callout domain
 check the screenshot on section 1 to see the commands used to access these directories
