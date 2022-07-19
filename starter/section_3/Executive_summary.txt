@@ -1,0 +1,25 @@
+These are necessary recommendation given by CENTER FOR INTERNET SECURITY Benchmark for Ubuntu Linux operating system. (CIS Ubuntu_linux_20.04_v1.1.0)
+(1) Disable Automounting 
+Run the command to verify 
+#systemctl is-enabled autofs
+#dpkg -s autofs
+#systemctl --now disable autofs OR apt purge autofs
+
+(2) [CIS 3.5.3.2.4, page 264] - Ensure iptables rules exist for all open ports. 
+(3) [CIS 5.3.10, page 399] - Ensure SSH root login is diabled
+(4) Ensure only strong ciphers are used such as SHA-512, page 436
+(5) Ensure password expiration is 6 months instead of 1 year
+(6) [CIS 6.1.13, page 486] Audit SUID executable regularly, page 461 for Debians linux
+(7) [CIS 6.1.14, page 488] Audit SGID execuatable regularly, page 488 for Debians linux
+(8) Ensure cron daemon is enabled and running for monitoring and auditing purpose
+#verrify with the command: systemctl is-enabled cron
+#if not run the command: systemctl --now enable cron
+(9) Ensure permission on /etc/crontab are configured (Automated)
+#verify: stat /etc/crontab
+#set ownership on cron to root only: chown root:root /etc/crontab
+#set permission on read, write and execute on cron: chmod og-rwx /etc/crontab
+(10) Ensure no duplicate username and group page 516- 517 of CIS Ubuntu linux 20.04 v1.1.0
+(11) Ensure all users own their home directories to limit or prevent unauthorized access to files not in the users assign role 
+(12) Ensure sudo logfile exist (Automated)  page 377
+There are many other recommendation listed Center for internet security for ubuntu linux. 
+I listed this 12 based on the vulnerabilities found on the given ubuntu operation system
