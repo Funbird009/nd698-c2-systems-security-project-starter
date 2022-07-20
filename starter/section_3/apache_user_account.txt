@@ -1,7 +1,21 @@
 # Provide the configuration lines you will update to ensure that Apache launches with group name as "apache-group" and user account as "apache-user".
-
+To see apache user running: ps aux | grep apach2
+sudo groupadd apache-group
+sudo adduser apache-user
+sudo usermod -g apache-group apache-user
+sudo nano envvars
+export APACHE_RUN_USER = apache-user
+export APACHE_RUN_GROUP = apache-group
+sudo service apache2 restart
 
 #Configuration lines:
-
+it terminates the current apache2 process running as root: kill -9 5349
+ls -f /etc/apache2
+de-privilege the group and username:apache-user:
+#Deny apache-user from using the su command
+%apache-user ALL=(ALL:ALL) ALL !/bin/su
+To set the ownership to read only for root:sudo chown -R root:root /etc/apache2
+sudo chown apache-user:apache-group /etc/apache2
+sudo service apache2 restart
 
 
