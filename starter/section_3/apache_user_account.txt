@@ -15,6 +15,7 @@ de-privilege the group and username:apache-user:
 #Deny apache-user from using the su command
 %apache-user ALL=(ALL:ALL) ALL !/bin/su
 To set the ownership to read only for root:sudo chown -R root:root /etc/apache2
+note: there is a group called root in the Ubuntu OS: group
 sudo chown apache-user:apache-group /etc/apache2
 sudo service apache2 restart
 
